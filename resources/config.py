@@ -1,2 +1,2 @@
-input_path="..\\..\\data\\input"
-output_path="..\\..\\data\\output"
+input_path="data\\input"
+output_path="data\\output"

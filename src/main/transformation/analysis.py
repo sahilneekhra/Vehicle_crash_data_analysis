@@ -189,7 +189,7 @@ def count_distinct_crashes_no_damage_insured(df_damages_use: DataFrame, df_units
     logger.info("Starting analysis: count_distinct_crashes_no_damage_insured")
     df_damaged_property = df_damages_use.filter(col('DAMAGED_PROPERTY').isNotNull()).select("CRASH_ID").distinct()
 
-    df_damage_range = df_units_use.select('FIN_RESP_TYPE_ID', 'CRASH_ID', 'UNIT_NBR', 'VEH_DMAG_SCL_1_ID',
+    df_damage_range = df_units_use.select('FIN_RESP_TYPE_ID', 'CRASH_ID', 'VEH_DMAG_SCL_1_ID',
                                           'VEH_DMAG_SCL_2_ID') \
         .filter(df_units_use['FIN_RESP_TYPE_ID'].contains('INSURANCE')) \
         .withColumn("DAMAGE_RANGE1", regexp_extract(col('VEH_DMAG_SCL_1_ID'), "\\d+", 0)) \

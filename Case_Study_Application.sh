@@ -6,6 +6,4 @@
 #
 ###################################################################
 
-spark-submit \
---master loca['*'] \
-src/main/main.py
+spark-submit --master local['*'] ./main.py
