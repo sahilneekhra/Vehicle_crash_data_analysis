@@ -75,8 +75,8 @@ PySpark 3.5.1
 ### Installation
 1. Clone the repository:
 ```
-git clone https://github.com/sahilneekhra/Case_Study_BCG.git
-cd Case_Study_BCG
+git clone https://github.com/sahilneekhra/Vehicle_crash_data_analysis.git
+cd Vehicle_crash_data_analysis
 ```
 2. Install dependencies:
 ```
